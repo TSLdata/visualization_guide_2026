@@ -21,8 +21,8 @@ chart_name <- data %>%
 ```
 <details>
   <summary><b>Black and white version</b></summary>
-  ```
   
+  ```
   b_w_axis <- policy %>%
   ggplot(aes(x = reorder(Policy, order), y = Count, fill = Policy)) +
   geom_col() +
@@ -40,7 +40,8 @@ chart_name <- data %>%
         text = element_text(family = "Palatino")) +
   labs(x = "Institution Policy", y = "Number of Universities", title = "Institution-Wide AI Policy at Top 100 U.S. Universities")
     
-    ```
+  ```
+
 </details>
 
 ## Scatter Plot
