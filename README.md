@@ -52,7 +52,7 @@ chart_name_col <- dataset %>%
 <details>
   <summary><b>Black and white version</b></summary>
 
-    ```
+  ```
 chart_name_bw <- dataset %>%
   ggplot(aes(x = x_axis_variable, y = Count, fill = Policy)) + # use x = reorder(...) if needed
   geom_col() +
