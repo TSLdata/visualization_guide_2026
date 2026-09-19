@@ -48,6 +48,9 @@ chart_name <- data %>%
 
 ## Pie Chart
 
+<details>
+  <summary><b>Color version</b></summary>
+
 ```
 pie_data %>%
   ggplot(aes(x="", y = percentage_variable, fill=reorder(x_variable, count))) +
@@ -63,6 +66,9 @@ pie_data %>%
   theme(text = element_text(family = "Palatino", size = 12), plot.title = element_text(vjust = -2))
 
 ```
+
+<details>
+
 <details>
   <summary><b>Black and white version</b></summary>
   
