@@ -27,6 +27,17 @@ claremont_bw <- c("Pomona"= "#3F3F46", "Pitzer" = "#71717B", "Claremont McKenna"
   
 </details>
 
+</details>
+
+<details>
+  <summary><b>Purple palette</b></summary>
+
+```
+cols <- c("var1" = "#ABB4DE", "var1"= "#697AC3", "var1"= "#4F62B8", "var1= "#2F3B75")
+```
+  
+</details>
+
 # Specific Charts
 
 ## Bar Chart
