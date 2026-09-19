@@ -47,17 +47,17 @@ chart_name <- data %>%
 
 ```
 pie_data %>%
-ggplot(aes(x="", y = percentage_variable, fill=reorder(x_variable, count))) +
-geom_bar(stat="identity", width=4, color = "white") +
-coord_polar("y", start=0) +
-theme_void() +
-scale_fill_manual(name = "", values = x_variable_color) +
-geom_text(data = subset(data_gen, percent >= 10), # only makes labels for percentages greater than 10%
-    aes(label = paste0(percent, "%")), # adds a % sign after the number, not always necessary
-    position = position_stack(vjust = 0.6), # adjust to 'float' labels into proper position
-    family = "Palatino", size = 5, color = "black") +
-labs(title = "title") +
-theme(text = element_text(family = "Palatino", size = 12), plot.title = element_text(vjust = -2))
+  ggplot(aes(x="", y = percentage_variable, fill=reorder(x_variable, count))) +
+  geom_bar(stat="identity", width=4, color = "white") +
+  coord_polar("y", start=0) +
+  theme_void() +
+  scale_fill_manual(name = "", values = x_variable_color) +
+  geom_text(data = subset(data_gen, percent >= 10), # only makes labels for percentages greater than 10%
+      aes(label = paste0(percent, "%")), # adds a % sign after the number, not always necessary
+      position = position_stack(vjust = 0.6), # adjust to 'float' labels into proper position
+      family = "Palatino", size = 5, color = "black") +
+  labs(title = "title") +
+  theme(text = element_text(family = "Palatino", size = 12), plot.title = element_text(vjust = -2))
 
 ```
 
@@ -66,15 +66,15 @@ theme(text = element_text(family = "Palatino", size = 12), plot.title = element_
 
 ```
 tree_data %>%
-ggplot(aes(area = count, fill = school, label = school_clean)) +
-geom_treemap(colour = "white", size = 4) +
-scale_fill_manual(values = cols_trees, name = "School") +
-geom_treemap_text(aes(label = percent, family = "Palatino", place = "topleft", size = 20, reflow = TRUE, padding.x = grid::unit(3, "mm"), padding.y = unit(13, "mm")) +
-theme_minimal() +
-labs(title = "Percent of TSL Staff from Each College") +
-theme(legend.position = "none",
-text = element_text(family = "Palatino"),
-plot.title = element_text(size = 20))
+  ggplot(aes(area = count, fill = color_variable, label = color_variable_name)) +
+  geom_treemap(colour = "white", size = 4) +
+  scale_fill_manual(values = cols_trees, name = "School") +
+  geom_treemap_text(aes(label = percent, family = "Palatino", place = "topleft", size = 20, reflow = TRUE, padding.x = grid::unit(3, "mm"), padding.y = unit(13, "mm")) +
+  theme_minimal() +
+  labs(title = "title") +
+  theme(legend.position = "none",
+    text = element_text(family = "Palatino"),
+    plot.title = element_text(size = 20))
 ```
 
 ## Line Plot
