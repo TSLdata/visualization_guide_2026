@@ -23,7 +23,9 @@ color_viz <- policy %>%
 
 color_viz
 ```
-
+<details>
+  <summary><b>Click here to expand</b></summary>
+<details>
 
 ## Scatter Plot
 
