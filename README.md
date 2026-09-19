@@ -11,7 +11,7 @@ cols =
   <summary><b>5C Colors</b></summary>
 
   ```
-claremont_col <- c("Pomona"= "#20438F", "Pitzer" = "#f68712", "Claremont McKenna" = "#980113", "Scripps" = "#33715a", "Harvey Mudd" = "#edaa00",
+cols <- c("Pomona"= "#20438F", "Pitzer" = "#f68712", "Claremont McKenna" = "#980113", "Scripps" = "#33715a", "Harvey Mudd" = "#edaa00",
                    "POM" = "#20438F", "PIT" = "#f68712", "CMC" = "#980113", "SCR" = "#33715a", "HMC" = "#edaa00")
 ```
   
@@ -21,7 +21,7 @@ claremont_col <- c("Pomona"= "#20438F", "Pitzer" = "#f68712", "Claremont McKenna
   <summary><b>5C Black and White</b></summary>
 
 ```
-claremont_bw <- c("Pomona"= "#3F3F46", "Pitzer" = "#71717B", "Claremont McKenna" = "#D4D4D8", "Scripps" = "#000000", "Harvey Mudd" = "#9F9FA9",
+bw <- c("Pomona"= "#3F3F46", "Pitzer" = "#71717B", "Claremont McKenna" = "#D4D4D8", "Scripps" = "#000000", "Harvey Mudd" = "#9F9FA9",
                   "POM" = "#3F3F46", "PIT" = "#71717B", "CMC" = "#D4D4D8", "SCR" = "#000000", "HMC" = "#9F9FA9")
 ```
   
@@ -52,7 +52,7 @@ chart_name_col <- dataset %>%
 <details>
   <summary><b>Black and white version</b></summary>
   
-  ```
+```
   chart_name_bw <- dataset %>%
   ggplot(aes(x = x_axis_variable, y = Count, fill = Policy)) + # use x = reorder(...) if needed
   geom_col() +
@@ -67,7 +67,8 @@ chart_name_col <- dataset %>%
         axis.line.y = element_line(colour = "black", linewidth = 0.2),
         text = element_text(family = "Palatino")) +
   labs(x = "x_axis_title", y = "y_axis_title", title = "title of chart, only capitalize first word")
-    ```
+
+```
 
 </details>
 
@@ -99,11 +100,12 @@ chart_name_col <- data_set %>%
   theme(text = element_text(family = "Palatino", size = 12),
         axis.title.y = element_text(margin = margin(r = 10)))
 ```
+
 <details>
   <summary><b>Black and white version</b></summary>
-  
-  ```
-  chart_name_bw <- data_set %>%
+
+```
+chart_name_bw <- data_set %>%
   ggplot(aes(y=y_axis_variable, fill= stacked_variable, x = x_axis_variable)) +
   geom_bar(position = "stack", stat="identity", width = 0.55,
   color = "black",
@@ -129,7 +131,7 @@ chart_name_col <- data_set %>%
         axis.title.y = element_text(margin = margin(r = 10))) +
   theme(panel.grid.major = element_blank(),
         panel.grid.minor = element_blank())
-    ```
+```
 
 </details>
 
@@ -156,6 +158,7 @@ ggplot(aes(x = x_axis_variable, y = y_axis_variable, fill = clustered_variable))
 
 <details>
   <summary><b>Black and white version</b></summary>
+  
 ```
 chart_name_col <- dataset %>%
 ggplot(aes(x = x_axis_variable, y = y_axis_variable, fill = clustered_variable)) + # in example clustered_variables are ACT and SAT
@@ -173,6 +176,7 @@ ggplot(aes(x = x_axis_variable, y = y_axis_variable, fill = clustered_variable))
 theme(panel.grid.major = element_blank(),
         panel.grid.minor = element_blank())
 ```
+  
 </details>
 
 ## Basic Scatter Plot
@@ -227,7 +231,7 @@ chart_name_col <- dataset %>%
   <summary><b>Color version</b></summary>
 
 ```
-pie_data %>%
+dataframe %>%
   ggplot(aes(x="", y = percentage_variable, fill=reorder(x_variable, count))) +
   geom_bar(stat="identity", width=4, color = "white") +
   coord_polar("y", start=0) +
@@ -248,18 +252,18 @@ pie_data %>%
   <summary><b>Black and white version</b></summary>
   
   ```
-  pie_data %>%
-  ggplot(aes(x="", y = percentage_variable, fill=reorder(x_variable, count))) +
-  geom_bar(stat="identity", width=4, color = "white") +
-  coord_polar("y", start=0) +
-  theme_void() +
-  geom_text(data = subset(data_gen, percent >= 10), # only makes labels for percentages greater than 10%
-      aes(label = paste0(percent, "%")), # adds a % sign after the number, not always necessary
-      position = position_stack(vjust = 0.6), # adjust to 'float' labels into proper position
-      family = "Palatino", size = 5, color = "black") +
-  labs(title = "title") +
-  theme(text = element_text(family = "Palatino", size = 12), plot.title = element_text(vjust = -2)) +
-  scale_fill_manual(name = "", values = x_variable_bw) #only difference from color version
+  dataframe %>%
+    ggplot(aes(x="", y = percentage_variable, fill=reorder(x_variable, count))) +
+    geom_bar(stat="identity", width=4, color = "white") +
+    coord_polar("y", start=0) +
+    theme_void() +
+    geom_text(data = subset(data_gen, percent >= 10), # only makes labels for percentages greater than 10%
+        aes(label = paste0(percent, "%")), # adds a % sign after the number, not always necessary
+        position = position_stack(vjust = 0.6), # adjust to 'float' labels into proper position
+        family = "Palatino", size = 5, color = "black") +
+    labs(title = "title") +
+    theme(text = element_text(family = "Palatino", size = 12), plot.title = element_text(vjust = -2)) +
+    scale_fill_manual(name = "", values = x_variable_bw) #only difference from color version
   ```
 
 </details>
@@ -273,7 +277,7 @@ pie_data %>%
   <summary><b>Color version</b></summary>
 
   ```
-tree_data %>%
+dataframe %>%
   ggplot(aes(area = count, fill = color_variable, label = color_variable_name)) +
   geom_treemap(colour = "white", size = 4) +
   scale_fill_manual(values = cols_trees, name = "School") +
@@ -293,16 +297,16 @@ tree_data %>%
   <summary><b>Black and white version</b></summary>
   
   ```
-  tree_data %>%
-  ggplot(aes(area = count, fill = color_variable, label = color_variable_name)) +
-  geom_treemap(colour = "white", size = 4) +
-  scale_fill_manual(values = color_variable_bw, name = "School") + # difference from color version
-  geom_treemap_text(aes(label = percent, family = "Palatino", place = "topleft", size = 20, reflow = TRUE, padding.x = grid::unit(3, "mm"), padding.y = unit(13, "mm")) +
-  theme_minimal() +
-  labs(title = "title") +
-  theme(legend.position = "none",
-    text = element_text(family = "Palatino"),
-    plot.title = element_text(size = 20))
+  dataframe %>%
+    ggplot(aes(area = count, fill = color_variable, label = color_variable_name)) +
+    geom_treemap(colour = "white", size = 4) +
+    scale_fill_manual(values = color_variable_bw, name = "School") + # difference from color version
+    geom_treemap_text(aes(label = percent, family = "Palatino", place = "topleft", size = 20, reflow = TRUE, padding.x = grid::unit(3, "mm"), padding.y = unit(13, "mm")) +
+    theme_minimal() +
+    labs(title = "title") +
+    theme(legend.position = "none",
+      text = element_text(family = "Palatino"),
+      plot.title = element_text(size = 20))
   ```
 
 </details>
@@ -311,6 +315,7 @@ tree_data %>%
 
 <img width="626" height="382" alt="line_example" src="https://github.com/user-attachments/assets/0b6f9244-cded-4a57-8bba-c85cdd525ca7" />
 
+Here, "line_one" and "line_two" refer to **Groceries** and **SNAP** respectively. The colors are coded directly using **scale_color_manual**.
 
 <details>
   <summary><b>Color version</b></summary>
@@ -319,11 +324,11 @@ tree_data %>%
 line_data %>%
   ggplot(aes(x = x_variable, y = y_variable)) +
   geom_line(aes(color = "line_one"), linewidth = 1.2) +
-  geom_line(data = snap_clean, aes(x = date, y = cost, color = "line_two"), linewidth = 1.2) +
+  geom_line(data = dataframe, aes(x = x_variable, y = y_variable, color = "line_two"), linewidth = 1.2) +
   scale_color_manual(values = c("line_one" = "#F03282", "line_two" = "#156FB0"), name = "") +
   scale_y_continuous(limits = c(250, 1100),
                      breaks = c(400, 600, 800, 1000)) + # custom ticks for y axis
-  labs(title = "title", x = "x_axis_title", y = "y_axis_title") +
+  labs(title = "title", x = "x axis title", y = "y axis title") +
   theme_minimal() +
   theme(text = element_text(family = "Palatino"),
         axis.title.x = element_text(margin = margin(t = 15)),
@@ -338,14 +343,14 @@ line_data %>%
   <summary><b>Black and white version</b></summary>
   
   ```
-  line_data %>%
+  dataframe %>%
     ggplot(aes(x = x_variable, y = y_variable)) +
     geom_line(aes(color = "line_one"), linewidth = 1.2) +
-    geom_line(data = snap_clean, aes(x = date, y = cost, color = "line_two"), linewidth = 1.2) +
+    geom_line(data = dataframe, aes(x = x_variable, y = y_variable, color = "line_two"), linewidth = 1.2) +
     scale_color_manual(values = c("line_one" = "#91919C", "line_two" = "#222225") +
     scale_y_continuous(limits = c(250, 1100),
                      breaks = c(400, 600, 800, 1000)) + # custom ticks for y axis
-    labs(title = "title", x = "x_axis_title", y = "y_axis_title") +
+    labs(title = "title", x = "x axis title", y = "y axis title") +
     theme_minimal() +
     theme(text = element_text(family = "Palatino"),
         axis.title.x = element_text(margin = margin(t = 15)),
