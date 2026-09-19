@@ -118,6 +118,43 @@ tree_data %>%
 
 ## Line Plot
 
+```
+line_data %>%
+  ggplot(aes(x = x_variable, y = y_variable)) +
+  geom_line(aes(color = "line_one"), linewidth = 1.2) +
+  geom_line(data = snap_clean, aes(x = date, y = cost, color = "line_two"), linewidth = 1.2) +
+  scale_color_manual(values = c("line_one" = "#F03282", "line_two" = "#156FB0"), name = "") +
+  scale_y_continuous(limits = c(250, 1100),
+                     breaks = c(400, 600, 800, 1000)) + # custom ticks for y axis
+  labs(title = "title", x = "x_axis_title", y = "y_axis_title") +
+  theme_minimal() +
+  theme(text = element_text(family = "Palatino"),
+        axis.title.x = element_text(margin = margin(t = 15)),
+        axis.title.y = element_text(margin = margin(r = 10)))
+
+```
+
+<details>
+  <summary><b>Black and white version</b></summary>
+  
+  ```
+  line_data %>%
+    ggplot(aes(x = x_variable, y = y_variable)) +
+    geom_line(aes(color = "line_one"), linewidth = 1.2) +
+    geom_line(data = snap_clean, aes(x = date, y = cost, color = "line_two"), linewidth = 1.2) +
+    scale_color_manual(values = c("line_one" = "#91919C", "line_two" = "#222225") +
+    scale_y_continuous(limits = c(250, 1100),
+                     breaks = c(400, 600, 800, 1000)) + # custom ticks for y axis
+    labs(title = "title", x = "x_axis_title", y = "y_axis_title") +
+    theme_minimal() +
+    theme(text = element_text(family = "Palatino"),
+        axis.title.x = element_text(margin = margin(t = 15)),
+        axis.title.y = element_text(margin = margin(r = 10)),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank())
+  ```
+
+</details>
 
 # Saving and Exporting
 
