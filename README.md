@@ -1,6 +1,29 @@
 
 # Set Up
 
+## Color Palettes
+
+
+<details>
+  <summary><b>5C Colors</b></summary>
+
+  ```
+claremont_col <- c("Pomona"= "#20438F", "Pitzer" = "#f68712", "Claremont McKenna" = "#980113", "Scripps" = "#33715a", "Harvey Mudd" = "#edaa00",
+                   "POM" = "#20438F", "PIT" = "#f68712", "CMC" = "#980113", "SCR" = "#33715a", "HMC" = "#edaa00")
+```
+  
+</details>
+
+<details>
+  <summary><b>5C Black and White</b></summary>
+
+```
+claremont_bw <- c("Pomona"= "#3F3F46", "Pitzer" = "#71717B", "Claremont McKenna" = "#D4D4D8", "Scripps" = "#000000", "Harvey Mudd" = "#9F9FA9",
+                  "POM" = "#3F3F46", "PIT" = "#71717B", "CMC" = "#D4D4D8", "SCR" = "#000000", "HMC" = "#9F9FA9")
+```
+  
+</details>
+
 # Specific Charts
 
 ## Bar Chart
