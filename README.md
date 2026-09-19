@@ -67,7 +67,7 @@ pie_data %>%
 
 ```
 
-<details>
+</details>
 
 <details>
   <summary><b>Black and white version</b></summary>
