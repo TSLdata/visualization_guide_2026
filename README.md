@@ -48,6 +48,9 @@ chart_name <- data %>%
 
 ## Pie Chart
 
+<img width="546" height="400" alt="pie_example" src="https://github.com/user-attachments/assets/fcea62ff-eca3-4ff6-b2cd-65e2e191bd2e" />
+
+
 <details>
   <summary><b>Color version</b></summary>
 
