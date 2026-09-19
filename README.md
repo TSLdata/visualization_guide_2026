@@ -51,9 +51,9 @@ chart_name_col <- dataset %>%
 ```
 <details>
   <summary><b>Black and white version</b></summary>
-  
-  ```
-  chart_name_bw <- dataset %>%
+
+    ```
+chart_name_bw <- dataset %>%
   ggplot(aes(x = x_axis_variable, y = Count, fill = Policy)) + # use x = reorder(...) if needed
   geom_col() +
   scale_fill_manual(values = b_w, name = "name_of_legend") +
@@ -67,7 +67,7 @@ chart_name_col <- dataset %>%
         axis.line.y = element_line(colour = "black", linewidth = 0.2),
         text = element_text(family = "Palatino")) +
   labs(x = "x_axis_title", y = "y_axis_title", title = "title of chart, only capitalize first word")
-    ```
+```
 
 </details>
 
