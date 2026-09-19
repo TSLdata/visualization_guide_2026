@@ -22,6 +22,7 @@ chart_name <- data %>%
 <details>
   <summary><b>Black and white version</b></summary>
   ```
+  
   b_w_axis <- policy %>%
   ggplot(aes(x = reorder(Policy, order), y = Count, fill = Policy)) +
   geom_col() +
@@ -38,6 +39,7 @@ chart_name <- data %>%
         axis.line.y = element_line(colour = "black", linewidth = 0.2),
         text = element_text(family = "Palatino")) +
   labs(x = "Institution Policy", y = "Number of Universities", title = "Institution-Wide AI Policy at Top 100 U.S. Universities")
+    
     ```
 </details>
 
@@ -62,6 +64,7 @@ pie_data %>%
 ```
 <details>
   <summary><b>Black and white version</b></summary>
+  
   ```
   pie_data %>%
   ggplot(aes(x="", y = percentage_variable, fill=reorder(x_variable, count))) +
@@ -75,7 +78,8 @@ pie_data %>%
   labs(title = "title") +
   theme(text = element_text(family = "Palatino", size = 12), plot.title = element_text(vjust = -2)) +
   scale_fill_manual(name = "", values = x_variable_bw) #only difference from color version
-    ```
+  ```
+
 </details>
 
 ## Tree Plot
@@ -95,6 +99,7 @@ tree_data %>%
 
 <details>
   <summary><b>Black and white version</b></summary>
+  
   ```
   tree_data %>%
   ggplot(aes(area = count, fill = color_variable, label = color_variable_name)) +
@@ -107,6 +112,7 @@ tree_data %>%
     text = element_text(family = "Palatino"),
     plot.title = element_text(size = 20))
   ```
+
 </details>
 
 ## Line Plot
