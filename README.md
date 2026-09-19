@@ -5,6 +5,9 @@
 
 ## Bar Chart
 
+### Simple Horizontal Bar Chart
+
+
 ## Scatter Plot
 
 ## Pie Chart
@@ -13,4 +16,6 @@
 
 ## Line Plot
 
+
+# Saving and Exporting
 
