@@ -29,7 +29,7 @@ claremont_bw <- c("Pomona"= "#3F3F46", "Pitzer" = "#71717B", "Claremont McKenna"
 
 </details>
 
-#### generate color palettes here: `https://r-graph-gallery.com/color-palette-finder`
+#### Generate Color Palettes[here](https://r-graph-gallery.com/color-palette-finder)
 
 # Specific Charts
 
