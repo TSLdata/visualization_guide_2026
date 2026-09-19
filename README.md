@@ -94,7 +94,13 @@ pie_data %>%
 
 ## Tree Plot
 
-```
+<img width="550" height="220" alt="tree_example" src="https://github.com/user-attachments/assets/91dcf0d5-d702-452d-9e7e-d2ca8214d326" />
+
+
+<details>
+  <summary><b>Color version</b></summary>
+
+  ```
 tree_data %>%
   ggplot(aes(area = count, fill = color_variable, label = color_variable_name)) +
   geom_treemap(colour = "white", size = 4) +
@@ -106,6 +112,10 @@ tree_data %>%
     text = element_text(family = "Palatino"),
     plot.title = element_text(size = 20))
 ```
+
+  
+</details>
+
 
 <details>
   <summary><b>Black and white version</b></summary>
@@ -127,7 +137,13 @@ tree_data %>%
 
 ## Line Plot
 
-```
+<img width="626" height="382" alt="line_example" src="https://github.com/user-attachments/assets/0b6f9244-cded-4a57-8bba-c85cdd525ca7" />
+
+
+<details>
+  <summary><b>Color version</b></summary>
+
+  ```
 line_data %>%
   ggplot(aes(x = x_variable, y = y_variable)) +
   geom_line(aes(color = "line_one"), linewidth = 1.2) +
@@ -140,8 +156,11 @@ line_data %>%
   theme(text = element_text(family = "Palatino"),
         axis.title.x = element_text(margin = margin(t = 15)),
         axis.title.y = element_text(margin = margin(r = 10)))
-
 ```
+
+  
+</details>
+
 
 <details>
   <summary><b>Black and white version</b></summary>
