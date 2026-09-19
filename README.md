@@ -223,7 +223,7 @@ chart_name_col <- dataset %>%
 
 ## Pie Chart
 
-<img width="546" height="400" alt="pie_example" src="https://github.com/user-attachments/assets/fcea62ff-eca3-4ff6-b2cd-65e2e191bd2e" />
+<img width="334" height="240" alt="pie_example" src="https://github.com/user-attachments/assets/6a6e9c20-ae1a-450d-9097-f09e2e8ba83a" />
 
 
 <details>
@@ -269,7 +269,7 @@ dataframe %>%
 
 ## Tree Plot
 
-<img width="550" height="220" alt="tree_example" src="https://github.com/user-attachments/assets/91dcf0d5-d702-452d-9e7e-d2ca8214d326" />
+<img width="627" height="267" alt="tree_example" src="https://github.com/user-attachments/assets/7697dd30-e56e-44ad-925c-3cd1aee81368" />
 
 
 <details>
@@ -312,7 +312,8 @@ dataframe %>%
 
 ## Line Plot
 
-<img width="626" height="382" alt="line_example" src="https://github.com/user-attachments/assets/0b6f9244-cded-4a57-8bba-c85cdd525ca7" />
+<img width="629" height="395" alt="line_example" src="https://github.com/user-attachments/assets/5e4b166f-63b1-4fc6-8d4e-701d5ff9b4b0" />
+
 
 Here, "line_one" and "line_two" refer to **Groceries** and **SNAP** respectively. The colors are coded directly using **scale_color_manual**.
 
