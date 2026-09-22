@@ -412,3 +412,11 @@ line_data %>%
 
 # Saving and Exporting
 
+```
+ggsave("chart_name_bw.pdf", plot = bw_mm, device = "pdf", width = 8, height = 6)
+
+
+ggsave("chart_name_col.pdf", plot = col_mm, device = "pdf", width = 8, height = 6)
+
+ggsave("chart_name_col.png", plot = col_mm, device = "png", width = 8, height = 6)
+```
