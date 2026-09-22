@@ -73,7 +73,7 @@ chart_name_bw <- dataset %>%
 </details>
 
 ## Stacked Bar Chart
-<img width="760" height="360" alt="tsl_race" src="https://github.com/user-attachments/assets/e585d100-3dc0-420e-a80a-ebe400c0844a" />
+<img width="874" height="414" alt="tsl_race" src="https://github.com/user-attachments/assets/e585d100-3dc0-420e-a80a-ebe400c0844a" />
 
 <details>
   <summary><b>Color version</b></summary>
@@ -144,7 +144,7 @@ chart_name_bw <- data_set %>%
 
 
 ## Clustered Bar Chart
-<img width="300" height="180" alt="cmc_test" src="https://github.com/user-attachments/assets/e7904928-f2e4-49e8-b15f-48210e464de1" />
+<img width = "825" and height = "495" alt="cmc_test" src="https://github.com/user-attachments/assets/e7904928-f2e4-49e8-b15f-48210e464de1" />
 
 <details>
   <summary><b>Color version</b></summary>
@@ -189,7 +189,7 @@ theme(panel.grid.major = element_blank(),
 </details>
 
 ## Basic Scatter Plot
-<img width="386" height="225" alt="image" src="https://github.com/user-attachments/assets/9fc896bc-5dab-4c93-80b0-1fa0e917a9ff" />
+<img width="849.2" height="495" alt="image" src="https://github.com/user-attachments/assets/9fc896bc-5dab-4c93-80b0-1fa0e917a9ff" />
 
 <details>
   <summary><b>Can use same for black/white and color</b></summary>
