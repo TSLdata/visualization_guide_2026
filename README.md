@@ -32,6 +32,8 @@ bw <- c("Pomona"= "#3F3F46", "Pitzer" = "#71717B", "Claremont McKenna" = "#D4D4D
 
 
 ## Column Chart
+<img width="871" height="538" alt="image" src="https://github.com/user-attachments/assets/5a6f8d04-7026-469c-8e17-2bd40abf02c2" />
+
 <img width="760" height="360" alt="image" src="https://github.com/user-attachments/assets/807e8807-cf28-4e3b-a0cb-c676f5dccd24" />
 
 <details>
