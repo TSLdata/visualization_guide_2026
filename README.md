@@ -429,8 +429,7 @@ ggsave("chart_name_col.png", plot = col_mm, device = "png", width = 8, height = 
 
 # More inspiration
 <img width="2000" height="1545" alt="water-costs" src="https://github.com/user-attachments/assets/a539e408-d5b8-4c25-a00d-857cb3376912" />
-
-##### tip: it's ok to use other visual editors to add other elements on top of r charts! get creative!
+#### tip: it's ok to use other visual editors to add other elements on top of r charts! get creative!
 <img width="2000" height="1545" alt="pomona-water-usage" src="https://github.com/user-attachments/assets/e12fc0a1-3e16-4534-9238-565909970559" />
 <img width="2400" height="1800" alt="boilers" src="https://github.com/user-attachments/assets/b0b76aad-c2cf-4d5e-9515-c2d5089f325c" />
 <img width="2000" height="1545" alt="sex-trade" src="https://github.com/user-attachments/assets/be81d47b-45bf-46d5-b8bc-8681d667452e" />
