@@ -73,7 +73,7 @@ chart_name_bw <- dataset %>%
 </details>
 
 ## Stacked Bar Chart
-<img width="720" height="540" alt="tsl_race" src="https://github.com/user-attachments/assets/e585d100-3dc0-420e-a80a-ebe400c0844a" />
+<img width="760" height="360" alt="tsl_race" src="https://github.com/user-attachments/assets/e585d100-3dc0-420e-a80a-ebe400c0844a" />
 
 <details>
   <summary><b>Color version</b></summary>
