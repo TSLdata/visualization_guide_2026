@@ -32,7 +32,8 @@ bw <- c("Pomona"= "#3F3F46", "Pitzer" = "#71717B", "Claremont McKenna" = "#D4D4D
 
 
 ## Column Chart
-<img width="480" height="360" alt="ai-professor-policy-color" src="https://github.com/user-attachments/assets/fd3f3033-ad33-4215-b7b7-cafa49fed8fa" />
+<img width="720" height="540" alt="image" src="https://github.com/user-attachments/assets/807e8807-cf28-4e3b-a0cb-c676f5dccd24" />
+
 <details>
   <summary><b>Color version</b></summary>
 ```
