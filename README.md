@@ -420,3 +420,8 @@ ggsave("chart_name_col.pdf", plot = col_mm, device = "pdf", width = 8, height = 
 
 ggsave("chart_name_col.png", plot = col_mm, device = "png", width = 8, height = 6)
 ```
+### Basic check list before exporting
+- black and white colors will be distinguishable in print
+- black and white copy should have no grid lines
+- only the first word is capitalized
+- everything is spelled correctly and clearly labeled
