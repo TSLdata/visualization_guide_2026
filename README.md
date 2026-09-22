@@ -74,6 +74,8 @@ chart_name_bw <- dataset %>%
 ### Stacked Bar Chart
 <img width="3000" height="1800" alt="tsl_race" src="https://github.com/user-attachments/assets/e585d100-3dc0-420e-a80a-ebe400c0844a" />
 
+<details>
+  <summary><b>Color version</b></summary>
 ```
 chart_name_col <- data_set %>%
   ggplot(aes(y=y_axis_variable, fill= stacked_variable, x = x_axis_variable)) +
@@ -100,7 +102,9 @@ chart_name_col <- data_set %>%
   theme(text = element_text(family = "Palatino", size = 12),
         axis.title.y = element_text(margin = margin(r = 10)))
 ```
+</details>
 
+  
 <details>
   <summary><b>Black and white version</b></summary>
 
