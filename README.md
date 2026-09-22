@@ -205,7 +205,8 @@ chart_name_col <- dataset %>%
 </details>
 
 ## Scatter Plot with labels
-<img width="768" height="576" alt="image" src="https://github.com/user-attachments/assets/aff4c7f7-0df6-4d21-8390-41027fbbff3d" />
+<img width="768" height="576" alt="image" src="https://github.com/user-attachments/assets/9c2d572c-2a09-4523-922f-8c17dd5fa01f" />
+
 
 <details>
   <summary><b>Color version</b></summary>
