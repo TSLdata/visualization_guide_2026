@@ -1,9 +1,6 @@
 
 # Set Up
 
-```
-cols = 
-```
 ## Color Palettes
 
 
@@ -36,7 +33,9 @@ bw <- c("Pomona"= "#3F3F46", "Pitzer" = "#71717B", "Claremont McKenna" = "#D4D4D
 ## Bar Chart
 
 ### Column Chart
-
+<img width="2400" height="1800" alt="ai-professor-policy-color" src="https://github.com/user-attachments/assets/fd3f3033-ad33-4215-b7b7-cafa49fed8fa" />
+<details>
+  <summary><b>Color version</b></summary>
 ```
 chart_name_col <- dataset %>%
   ggplot(aes(x = x_axis_variable, y = y_axis_variable, fill = x_axis_variable)) +
@@ -49,6 +48,8 @@ chart_name_col <- dataset %>%
         text = element_text(family = "Palatino")) +
   labs(x = "x_axis_title", y = "y_axis_title", title = "title of chart, only capitalize first word")
 ```
+</details>
+
 <details>
   <summary><b>Black and white version</b></summary>
 
@@ -143,7 +144,10 @@ chart_name_bw <- data_set %>%
 
 
 ### Clustered Bar Chart
+<img width="3000" height="1800" alt="cmc_test" src="https://github.com/user-attachments/assets/e7904928-f2e4-49e8-b15f-48210e464de1" />
 
+<details>
+  <summary><b>Color version</b></summary>
 ```
 chart_name_col <- dataset %>%
 ggplot(aes(x = x_axis_variable, y = y_axis_variable, fill = clustered_variable)) + # in example clustered_variables are ACT and SAT
@@ -159,6 +163,7 @@ ggplot(aes(x = x_axis_variable, y = y_axis_variable, fill = clustered_variable))
         axis.title.y = element_text(margin = margin(r = 10)),
         plot.title = element_text(size = 16)) 
 ```
+</details>
 
 <details>
   <summary><b>Black and white version</b></summary>
@@ -184,6 +189,7 @@ theme(panel.grid.major = element_blank(),
 </details>
 
 ## Basic Scatter Plot
+<img width="735" height="450" alt="image" src="https://github.com/user-attachments/assets/9fc896bc-5dab-4c93-80b0-1fa0e917a9ff" />
 
 ```
 chart_name_col <- dataset %>%
@@ -197,7 +203,7 @@ chart_name_col <- dataset %>%
 ```
 
 ## Scatter Plot with labels
-
+<img width="768" height="576" alt="image" src="https://github.com/user-attachments/assets/b141daa2-3c49-4a5d-b990-588b4ffa66a6" />
 ```
 chart_name_col <- dataset %>%
   ggplot(aes(x = x_axis_variable, y = y_axis_variable, col = dot_color_variable, label = dot_label_variable))+
