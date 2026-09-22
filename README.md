@@ -425,3 +425,12 @@ ggsave("chart_name_col.png", plot = col_mm, device = "png", width = 8, height = 
 - black and white copy should have no grid lines
 - only the first word is capitalized
 - everything is spelled correctly and clearly labeled
+- send over sources
+
+# More inspiration
+<img width="2000" height="1545" alt="water-costs" src="https://github.com/user-attachments/assets/a539e408-d5b8-4c25-a00d-857cb3376912" />
+<img width="2000" height="1545" alt="pomona-water-usage" src="https://github.com/user-attachments/assets/e12fc0a1-3e16-4534-9238-565909970559" />
+<img width="2400" height="1800" alt="boilers" src="https://github.com/user-attachments/assets/b0b76aad-c2cf-4d5e-9515-c2d5089f325c" />
+<img width="2000" height="1545" alt="sex-trade" src="https://github.com/user-attachments/assets/be81d47b-45bf-46d5-b8bc-8681d667452e" />
+<img width="2000" height="1545" alt="color-pomona-cair-ranking" src="https://github.com/user-attachments/assets/f54c7ecb-46b3-4a69-8fb1-e754e99d7a31" />
+
