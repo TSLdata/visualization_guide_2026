@@ -30,9 +30,8 @@ bw <- c("Pomona"= "#3F3F46", "Pitzer" = "#71717B", "Claremont McKenna" = "#D4D4D
 
 # Specific Charts
 
-## Bar Chart
 
-### Column Chart
+## Column Chart
 <img width="2400" height="1800" alt="ai-professor-policy-color" src="https://github.com/user-attachments/assets/fd3f3033-ad33-4215-b7b7-cafa49fed8fa" />
 <details>
   <summary><b>Color version</b></summary>
@@ -72,7 +71,7 @@ chart_name_bw <- dataset %>%
 
 </details>
 
-### Stacked Bar Chart
+## Stacked Bar Chart
 <img width="3000" height="1800" alt="tsl_race" src="https://github.com/user-attachments/assets/e585d100-3dc0-420e-a80a-ebe400c0844a" />
 
 <details>
@@ -140,10 +139,10 @@ chart_name_bw <- data_set %>%
 
 </details>
 
-### Horizontal Bart Chart
+## Horizontal Bart Chart
 
 
-### Clustered Bar Chart
+## Clustered Bar Chart
 <img width="3000" height="1800" alt="cmc_test" src="https://github.com/user-attachments/assets/e7904928-f2e4-49e8-b15f-48210e464de1" />
 
 <details>
@@ -191,6 +190,9 @@ theme(panel.grid.major = element_blank(),
 ## Basic Scatter Plot
 <img width="735" height="450" alt="image" src="https://github.com/user-attachments/assets/9fc896bc-5dab-4c93-80b0-1fa0e917a9ff" />
 
+<details>
+  <summary><b>Can use same for black/white and color</b></summary>
+
 ```
 chart_name_col <- dataset %>%
   ggplot(aes(x = x_axis_variable, y = y_axis_variable)) + 
@@ -201,9 +203,13 @@ chart_name_col <- dataset %>%
         axis.title.y = element_text(margin = margin(r = 10)))+
   labs(x = "x_axis_title", y = "y_axis_title", title = "title of chart, only capitalize first word")
 ```
+</details>
 
 ## Scatter Plot with labels
 <img width="768" height="576" alt="image" src="https://github.com/user-attachments/assets/b141daa2-3c49-4a5d-b990-588b4ffa66a6" />
+
+<details>
+  <summary><b>Color version</b></summary>
 ```
 chart_name_col <- dataset %>%
   ggplot(aes(x = x_axis_variable, y = y_axis_variable, col = dot_color_variable, label = dot_label_variable))+
@@ -231,7 +237,39 @@ chart_name_col <- dataset %>%
         axis.title.y = element_text(margin = margin(r = 10)))+
   labs(x = "x_axis_title", y = "y_axis_title", title = "title of chart, only capitalize first word")
 ```
-
+</details>
+  
+<details>
+  <summary><b>Black and white version</b></summary>
+```
+chart_name_col <- dataset %>%
+  ggplot(aes(x = x_axis_variable, y = y_axis_variable, col = dot_color_variable, label = dot_label_variable))+
+  geom_point(size = 3, # can adjust dot size as needed
+             show.legend = FALSE) + # hide legend
+  geom_text_repel(data = subset(dataset, test == 1), 
+                  family = "Palatino",
+                  size = 4.3,
+                  color = "black",
+                  nudge_y = 3000,
+                  segment.color = NA,
+                  show.legend = FALSE) +
+  geom_text_repel(data = subset(dataset, test == 0), 
+                  family = "Palatino",
+                  size = 3.1,
+                  color = "black",
+                  nudge_y = 2500,
+                  direction = "x",
+                  segment.color = NA,
+                  show.legend = FALSE) +
+  scale_color_manual(values = bw) +
+  theme_minimal()+
+  theme(text = element_text(family = "Palatino"),
+        axis.title.x = element_text(margin = margin(t = 15)),
+        axis.title.y = element_text(margin = margin(r = 10)))+
+  labs(x = "x_axis_title", y = "y_axis_title", title = "title of chart, only capitalize first word")
+```
+</details>
+  
 ## Pie Chart
 
 <img width="334" height="240" alt="pie_example" src="https://github.com/user-attachments/assets/6a6e9c20-ae1a-450d-9097-f09e2e8ba83a" />
