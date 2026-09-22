@@ -140,8 +140,6 @@ chart_name_bw <- data_set %>%
 
 </details>
 
-## Horizontal Bart Chart
-
 
 ## Clustered Bar Chart
 <img width = "825" and height = "495" alt="cmc_test" src="https://github.com/user-attachments/assets/e7904928-f2e4-49e8-b15f-48210e464de1" />
@@ -207,7 +205,7 @@ chart_name_col <- dataset %>%
 </details>
 
 ## Scatter Plot with labels
-<img width="768" height="576" alt="image" src="https://github.com/user-attachments/assets/b141daa2-3c49-4a5d-b990-588b4ffa66a6" />
+<img width="768" height="576" alt="image" src="https://github.com/user-attachments/assets/aff4c7f7-0df6-4d21-8390-41027fbbff3d" />
 
 <details>
   <summary><b>Color version</b></summary>
