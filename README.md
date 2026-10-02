@@ -19,7 +19,7 @@ cols <- c("Pomona"= "#20438F", "Pitzer" = "#f68712", "Claremont McKenna" = "#980
 
 ```
 bw <- c("Pomona"= "#3F3F46", "Pitzer" = "#71717B", "Claremont McKenna" = "#D4D4D8", "Scripps" = "#000000", "Harvey Mudd" = "#9F9FA9",
-                  "POM" = "#3F3F46", "PIT" = "#71717B", "CMC" = "#D4D4D8", "SCR" = "#000000", "HMC" = "#9F9FA9")
+                  "PO" = "#3F3F46", "PZ" = "#71717B", "CM" = "#D4D4D8", "SC" = "#000000", "HM" = "#9F9FA9")
 ```
   
 </details>
