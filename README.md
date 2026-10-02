@@ -9,7 +9,7 @@
 
   ```
 cols <- c("Pomona"= "#20438F", "Pitzer" = "#f68712", "Claremont McKenna" = "#980113", "Scripps" = "#33715a", "Harvey Mudd" = "#edaa00",
-                   "POM" = "#20438F", "PIT" = "#f68712", "CMC" = "#980113", "SCR" = "#33715a", "HMC" = "#edaa00")
+                   "PO" = "#20438F", "PZ" = "#f68712", "CM" = "#980113", "SC" = "#33715a", "HM" = "#edaa00")
 ```
   
 </details>
